@@ -95,15 +95,7 @@ for filename in os.listdir('./cogs'):
 async def change_status():
     await client.change_presence(activity=discord.Game(next(status)))
 
-# @client.event
-# async def on_reaction_add(ctx , reaction, user):
-#     channel = reaction.message.channel
-#     await ctx.send_message(channel , '{} has added to the message {}' .format(user.name , reaction.emoji, reaction.message.content))
 
-# @client.event
-# async def on_reaction_remove(ctx, reaction, user):
-#     channel = reaction.message.channel
-#     await ctx.send_message(channel , '{} has removed to the message {}' .format(user.name , reaction.emoji, reaction.message.content))
 
 # @client.command()
 # async def join(ctx):
