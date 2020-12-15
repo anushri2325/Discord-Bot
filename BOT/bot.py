@@ -97,11 +97,6 @@ async def change_status():
 
 
 
-# @client.command()
-# async def join(ctx):
-#     author = ctx.message.author
-#     channel = author.voice_channel 
-#     await client.join_voice_channel(channel)
 @client.command()
 async def join( ctx, *, channel: discord.VoiceChannel):
     if ctx.voice_client is not None:
